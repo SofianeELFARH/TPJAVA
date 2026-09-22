@@ -1,0 +1,99 @@
+Exo 1
+
+ public static void main(String[] args) {
+        // Affichage du message Bonjour
+        System.out.println("Bonjour");
+        // Création de la variable discussion pour stocjer la réponse
+        String discussion;
+        // Déclaration du scanner
+        Scanner sc;
+        // Création du scanner
+        sc = new Scanner(System.in);
+        // Pose une question à l'utilsateur
+        System.out.println("Comment vas tu ?");
+        // Récupération de la réponse
+        discussion = sc.nextLine();
+        // Affichage du message de fin
+        System.out.println("Au revoir");
+        
+    }
+
+Exo2
+
+public static void main(String[] args) {
+        // Déclaration des variables
+        int nb;
+        int result;
+        int ind;
+        //nb=5;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("\n Entrer le nombre :");
+        nb=sc.nextInt(); 
+        result=0;
+        
+        //Addition des nb premiers entiers
+        ind=1;
+        while (ind <= nb) {
+            result=result+ind;
+            ind++;//Ajoute 1 à ind
+        }
+        
+        //Affichage du resultat
+        System.out.println();
+        System.out.println("La somme des "+ nb + "entiers est: "+result);
+    }
+
+Calculator
+
+public static void main(String[] args) {
+
+        // Affichage des opérations
+        System.out.println("Please enter the operator:");
+        System.out.println("1) add");
+        System.out.println("2) substract");
+        System.out.println("3) multiply");
+        System.out.println("4) divide");
+        System.out.println("5) modulo");
+        
+        Scanner sc = new Scanner(System.in);
+        
+        // Variable opérateur
+        int operateur;    
+        System.out.println("\n Entrer l'opérateur :");
+        operateur=sc.nextInt(); 
+        
+        // Operande1
+        int operande1; 
+        System.out.println("\n Entrez la première valeur:"); 
+        operande1 = sc.nextInt(); 
+        
+        // Operande2
+        int operande2; 
+        System.out.println("\n Entrez la seconde valeur:"); 
+        operande2 = sc.nextInt(); 
+        
+        // Bloc d'opérations
+        
+        int resultat = 0;
+        if (operateur == 1) {
+            resultat = operande1 + operande2;
+        }
+        else if (operateur == 2) {
+            resultat = operande1 - operande2;
+        }
+        else if (operateur == 3) {
+            resultat = operande1 * operande2;
+        }
+        else if (operateur == 4) {
+            resultat = operande1 / operande2;
+        }
+        else if (operateur == 5) {
+            resultat = operande1 % operande2;
+        }
+        else {
+            System.out.println("Erreur :l'opérateur choisi n'est pas entre 1 et 5");// Message d'erreur
+        }
+        
+        System.out.println("Le résultat est : " + resultat); 
+
+    }
