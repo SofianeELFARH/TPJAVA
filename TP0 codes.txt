@@ -21,18 +21,23 @@ Exo 1
 Exo2
 
 public static void main(String[] args) {
-        // Déclaration des variables
+        // Déclaration des variables notamment avec leur type
         int nb;
         int result;
         int ind;
         //nb=5;
+
+        // Création du scanner
         Scanner sc = new Scanner(System.in);
+        // Récupération du nombre
         System.out.println("\n Entrer le nombre :");
         nb=sc.nextInt(); 
+        // Initialisation du résultat à 0
         result=0;
         
         //Addition des nb premiers entiers
         ind=1;
+        // boucle while
         while (ind <= nb) {
             result=result+ind;
             ind++;//Ajoute 1 à ind
@@ -55,26 +60,28 @@ public static void main(String[] args) {
         System.out.println("4) divide");
         System.out.println("5) modulo");
         
-        Scanner sc = new Scanner(System.in);
+        // Création du scanner pour récupérer les valeurs saisies par l'utilisateurScanner
+        sc = new Scanner(System.in);
         
-        // Variable opérateur
+        // Demande et récupération de l'opérateur
         int operateur;    
         System.out.println("\n Entrer l'opérateur :");
         operateur=sc.nextInt(); 
         
-        // Operande1
+        // Operande1 : Demande et récupération de la valeur choisie
         int operande1; 
         System.out.println("\n Entrez la première valeur:"); 
         operande1 = sc.nextInt(); 
         
-        // Operande2
+        // Operande2 : Demande et récupération de la valeur choisie
         int operande2; 
         System.out.println("\n Entrez la seconde valeur:"); 
         operande2 = sc.nextInt(); 
         
-        // Bloc d'opérations
-        
+        // Initialisation de la variable qui contiendra le résultat
         int resultat = 0;
+
+        // Opérations selon les conditions
         if (operateur == 1) {
             resultat = operande1 + operande2;
         }
